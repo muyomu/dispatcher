@@ -6,5 +6,13 @@ $vendorDir = dirname(__DIR__);
 $baseDir = dirname($vendorDir);
 
 return array(
-    'Muyomu\\Dispatcher\\' => array($baseDir . '/src'),
+    'muyomu\\router\\' => array($vendorDir . '/muyomu/router/src'),
+    'muyomu\\http\\' => array($vendorDir . '/muyomu/http/src'),
+    'muyomu\\framework\\' => array($vendorDir . '/muyomu/framework/src'),
+    'muyomu\\executor\\' => array($vendorDir . '/muyomu/executor/src'),
+    'muyomu\\dpara\\' => array($vendorDir . '/muyomu/dpara/src'),
+    'muyomu\\database\\' => array($vendorDir . '/muyomu/database/src'),
+    'app\\' => array($baseDir . '/app'),
+    'Psr\\Log\\' => array($vendorDir . '/psr/log/src'),
+    'Monolog\\' => array($vendorDir . '/monolog/monolog/src/Monolog'),
 );

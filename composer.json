@@ -4,10 +4,19 @@
     "type": "project",
     "license": "apache-2.0",
     "stablity": "dev",
+    "autoload": {
+        "psr-4": {
+            "app\\": "app/"
+        }
+    },
     "authors": [
         {
-            "name": "mutian"
+            "name": "mutian",
+            "email": "mutian-xiangcai@outlook.com"
         }
     ],
-    "require": {}
+    "require": {
+        "muyomu/framework": "1.1.3",
+        "monolog/monolog": "^3.2"
+    }
 }
