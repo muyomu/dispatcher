@@ -7,6 +7,10 @@ namespace Composer\Autoload;
 class ComposerStaticInitbe3febd0604170dde1689a507d1d9e72
 {
     public static $prefixLengthsPsr4 = array (
+        'x' => 
+        array (
+            'xiangcai\\database\\mysql\\' => 24,
+        ),
         'm' => 
         array (
             'muyomu\\router\\' => 14,
@@ -15,6 +19,7 @@ class ComposerStaticInitbe3febd0604170dde1689a507d1d9e72
             'muyomu\\executor\\' => 16,
             'muyomu\\dpara\\' => 13,
             'muyomu\\database\\' => 16,
+            'muyomu\\aop\\' => 11,
         ),
         'a' => 
         array (
@@ -31,6 +36,10 @@ class ComposerStaticInitbe3febd0604170dde1689a507d1d9e72
     );
 
     public static $prefixDirsPsr4 = array (
+        'xiangcai\\database\\mysql\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/xiangcai/mysql-connector/src',
+        ),
         'muyomu\\router\\' => 
         array (
             0 => __DIR__ . '/..' . '/muyomu/router/src',
@@ -54,6 +63,10 @@ class ComposerStaticInitbe3febd0604170dde1689a507d1d9e72
         'muyomu\\database\\' => 
         array (
             0 => __DIR__ . '/..' . '/muyomu/database/src',
+        ),
+        'muyomu\\aop\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/muyomu/aop/src',
         ),
         'app\\' => 
         array (
