@@ -1,0 +1,25 @@
+{
+    "name": "muyomu/framework",
+    "description": "The booter of muyomu framework",
+    "type": "library",
+    "license": "apache-2.0",
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "muyomu\\framework\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "mutian",
+            "email": "mutian-xiangcai@outlook.com"
+        }
+    ],
+    "require": {
+        "muyomu/router": "1.1.10",
+        "muyomu/executor": "1.0.11",
+        "muyomu/http": "1.1.13",
+        "muyomu/database": "1.1.0",
+        "muyomu/dpara": "1.1.0"
+    }
+}

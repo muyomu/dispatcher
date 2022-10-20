@@ -9,14 +9,14 @@
 
 $config_application =[
     "application"=>"hello",
-    "controller_root"=>"controller"
+    "root_route"=>true
 ];
 
 
 $config_mysql =[
     "mutian"=>[
-        "hostname"=>"192.168.92.131",
-        "username"=>"mutian",
-        "password"=>"lzht19980710&&"
+        "hostname"=>"localhost",
+        "username"=>"root",
+        "password"=>"123456"
     ]
 ];

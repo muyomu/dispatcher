@@ -8,4 +8,4 @@
 
 use muyomu\router\routerClient;
 
-RouterClient::rule("post", "/hello/yes/:name", "Index", "index");
+RouterClient::rule("GET", "/", "Index", "index");

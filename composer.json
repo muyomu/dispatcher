@@ -3,7 +3,7 @@
     "description": "The entrance of muyomu web framework",
     "type": "project",
     "license": "apache-2.0",
-    "stablity": "dev",
+    "stablity": "stable",
     "autoload": {
         "psr-4": {
             "app\\": "app/"
@@ -16,7 +16,7 @@
         }
     ],
     "require": {
-        "muyomu/framework": "1.1.19",
+        "muyomu/framework": "1.1.22",
         "monolog/monolog": "^3.2",
         "muyomu/aop": "1.0.2",
         "xiangcai/mysql-connector": "1.0.10"

@@ -1,0 +1,504 @@
+{
+    "packages": [
+        {
+            "name": "monolog/monolog",
+            "version": "3.2.0",
+            "version_normalized": "3.2.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Seldaek/monolog.git",
+                "reference": "305444bc6fb6c89e490f4b34fa6e979584d7fa81"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/305444bc6fb6c89e490f4b34fa6e979584d7fa81",
+                "reference": "305444bc6fb6c89e490f4b34fa6e979584d7fa81",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=8.1",
+                "psr/log": "^2.0 || ^3.0"
+            },
+            "provide": {
+                "psr/log-implementation": "3.0.0"
+            },
+            "require-dev": {
+                "aws/aws-sdk-php": "^3.0",
+                "doctrine/couchdb": "~1.0@dev",
+                "elasticsearch/elasticsearch": "^7 || ^8",
+                "ext-json": "*",
+                "graylog2/gelf-php": "^1.4.2",
+                "guzzlehttp/guzzle": "^7.4",
+                "guzzlehttp/psr7": "^2.2",
+                "mongodb/mongodb": "^1.8",
+                "php-amqplib/php-amqplib": "~2.4 || ^3",
+                "phpstan/phpstan": "^1.4",
+                "phpstan/phpstan-deprecation-rules": "^1.0",
+                "phpstan/phpstan-strict-rules": "^1.1",
+                "phpunit/phpunit": "^9.5.16",
+                "predis/predis": "^1.1",
+                "ruflin/elastica": "^7",
+                "symfony/mailer": "^5.4 || ^6",
+                "symfony/mime": "^5.4 || ^6"
+            },
+            "suggest": {
+                "aws/aws-sdk-php": "Allow sending log messages to AWS services like DynamoDB",
+                "doctrine/couchdb": "Allow sending log messages to a CouchDB server",
+                "elasticsearch/elasticsearch": "Allow sending log messages to an Elasticsearch server via official client",
+                "ext-amqp": "Allow sending log messages to an AMQP server (1.0+ required)",
+                "ext-curl": "Required to send log messages using the IFTTTHandler, the LogglyHandler, the SendGridHandler, the SlackWebhookHandler or the TelegramBotHandler",
+                "ext-mbstring": "Allow to work properly with unicode symbols",
+                "ext-mongodb": "Allow sending log messages to a MongoDB server (via driver)",
+                "ext-openssl": "Required to send log messages using SSL",
+                "ext-sockets": "Allow sending log messages to a Syslog server (via UDP driver)",
+                "graylog2/gelf-php": "Allow sending log messages to a GrayLog2 server",
+                "mongodb/mongodb": "Allow sending log messages to a MongoDB server (via library)",
+                "php-amqplib/php-amqplib": "Allow sending log messages to an AMQP server using php-amqplib",
+                "rollbar/rollbar": "Allow sending log messages to Rollbar",
+                "ruflin/elastica": "Allow sending log messages to an Elastic Search server"
+            },
+            "time": "2022-07-24T12:00:55+00:00",
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-main": "3.x-dev"
+                }
+            },
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "Monolog\\": "src/Monolog"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jordi Boggiano",
+                    "email": "j.boggiano@seld.be",
+                    "homepage": "https://seld.be"
+                }
+            ],
+            "description": "Sends your logs to files, sockets, inboxes, databases and various web services",
+            "homepage": "https://github.com/Seldaek/monolog",
+            "keywords": [
+                "log",
+                "logging",
+                "psr-3"
+            ],
+            "support": {
+                "issues": "https://github.com/Seldaek/monolog/issues",
+                "source": "https://github.com/Seldaek/monolog/tree/3.2.0"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/Seldaek",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/monolog/monolog",
+                    "type": "tidelift"
+                }
+            ],
+            "install-path": "../monolog/monolog"
+        },
+        {
+            "name": "muyomu/aop",
+            "version": "v1.0.2",
+            "version_normalized": "1.0.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/muyomu/aop.git",
+                "reference": "30c6e7cca36382c8e485ef223a2bb4035795654c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/muyomu/aop/zipball/30c6e7cca36382c8e485ef223a2bb4035795654c",
+                "reference": "30c6e7cca36382c8e485ef223a2bb4035795654c",
+                "shasum": ""
+            },
+            "time": "2022-10-18T00:42:15+00:00",
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "muyomu\\aop\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "mutian",
+                    "email": "bhfqlz@qq.com"
+                }
+            ],
+            "description": "The aop framework for muyomu web framework",
+            "support": {
+                "issues": "https://github.com/muyomu/aop/issues",
+                "source": "https://github.com/muyomu/aop/tree/v1.0.2"
+            },
+            "install-path": "../muyomu/aop"
+        },
+        {
+            "name": "muyomu/database",
+            "version": "v1.1.0",
+            "version_normalized": "1.1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/muyomu/database.git",
+                "reference": "73eef94ffcd00a84c0df36237679bfbe074a94b1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/muyomu/database/zipball/73eef94ffcd00a84c0df36237679bfbe074a94b1",
+                "reference": "73eef94ffcd00a84c0df36237679bfbe074a94b1",
+                "shasum": ""
+            },
+            "time": "2022-10-16T00:57:44+00:00",
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "muyomu\\database\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "mutian",
+                    "email": "mutian-xiangcai@outlook.com"
+                }
+            ],
+            "description": "The database of muyomu web framework",
+            "support": {
+                "issues": "https://github.com/muyomu/database/issues",
+                "source": "https://github.com/muyomu/database/tree/v1.1.0"
+            },
+            "install-path": "../muyomu/database"
+        },
+        {
+            "name": "muyomu/dpara",
+            "version": "v1.1.0",
+            "version_normalized": "1.1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/muyomu/dpara.git",
+                "reference": "cd0f49b0222bda3ead408b0bbb8ec36ee2295ff1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/muyomu/dpara/zipball/cd0f49b0222bda3ead408b0bbb8ec36ee2295ff1",
+                "reference": "cd0f49b0222bda3ead408b0bbb8ec36ee2295ff1",
+                "shasum": ""
+            },
+            "require": {
+                "muyomu/database": "1.1.0",
+                "muyomu/http": "1.1.13",
+                "muyomu/router": "1.1.10"
+            },
+            "time": "2022-10-20T03:18:52+00:00",
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "muyomu\\dpara\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "mutian"
+                }
+            ],
+            "description": "The dynamic paramater resolver of muyomu framework",
+            "support": {
+                "issues": "https://github.com/muyomu/dpara/issues",
+                "source": "https://github.com/muyomu/dpara/tree/v1.1.0"
+            },
+            "install-path": "../muyomu/dpara"
+        },
+        {
+            "name": "muyomu/executor",
+            "version": "v1.0.11",
+            "version_normalized": "1.0.11.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/muyomu/executor.git",
+                "reference": "a5102320b1035fb69cd657a21fe7fc426e4346d2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/muyomu/executor/zipball/a5102320b1035fb69cd657a21fe7fc426e4346d2",
+                "reference": "a5102320b1035fb69cd657a21fe7fc426e4346d2",
+                "shasum": ""
+            },
+            "require": {
+                "muyomu/http": "1.1.13"
+            },
+            "time": "2022-10-19T12:22:28+00:00",
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "muyomu\\executor\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "mutian",
+                    "email": "mutian-xiangcai@outlook.com"
+                }
+            ],
+            "description": "The executor of muyomu framework",
+            "support": {
+                "issues": "https://github.com/muyomu/executor/issues",
+                "source": "https://github.com/muyomu/executor/tree/v1.0.11"
+            },
+            "install-path": "../muyomu/executor"
+        },
+        {
+            "name": "muyomu/framework",
+            "version": "v1.1.22",
+            "version_normalized": "1.1.22.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/muyomu/framework.git",
+                "reference": "d09f09b544ea6a42d725a28364b6b3cfdd5d0fcc"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/muyomu/framework/zipball/d09f09b544ea6a42d725a28364b6b3cfdd5d0fcc",
+                "reference": "d09f09b544ea6a42d725a28364b6b3cfdd5d0fcc",
+                "shasum": ""
+            },
+            "require": {
+                "muyomu/database": "1.1.0",
+                "muyomu/dpara": "1.1.0",
+                "muyomu/executor": "1.0.11",
+                "muyomu/http": "1.1.13",
+                "muyomu/router": "1.1.10"
+            },
+            "time": "2022-10-20T05:20:46+00:00",
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "muyomu\\framework\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "mutian",
+                    "email": "mutian-xiangcai@outlook.com"
+                }
+            ],
+            "description": "The booter of muyomu framework",
+            "support": {
+                "issues": "https://github.com/muyomu/framework/issues",
+                "source": "https://github.com/muyomu/framework/tree/v1.1.22"
+            },
+            "install-path": "../muyomu/framework"
+        },
+        {
+            "name": "muyomu/http",
+            "version": "v1.1.13",
+            "version_normalized": "1.1.13.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/muyomu/http.git",
+                "reference": "a9f2ed27a19ee6cd6dd92cfc1ba762d64eae173f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/muyomu/http/zipball/a9f2ed27a19ee6cd6dd92cfc1ba762d64eae173f",
+                "reference": "a9f2ed27a19ee6cd6dd92cfc1ba762d64eae173f",
+                "shasum": ""
+            },
+            "require": {
+                "muyomu/database": "1.1.0",
+                "muyomu/router": "1.1.10"
+            },
+            "time": "2022-10-19T12:15:27+00:00",
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "muyomu\\http\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "mutian",
+                    "email": "mutian-xiangcai@outlook.com"
+                }
+            ],
+            "description": "The http helper of muyomu web framework",
+            "support": {
+                "issues": "https://github.com/muyomu/http/issues",
+                "source": "https://github.com/muyomu/http/tree/v1.1.13"
+            },
+            "install-path": "../muyomu/http"
+        },
+        {
+            "name": "muyomu/router",
+            "version": "v1.1.10",
+            "version_normalized": "1.1.10.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/muyomu/router.git",
+                "reference": "d9923001224b54e94f1de24017bec2532c80c037"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/muyomu/router/zipball/d9923001224b54e94f1de24017bec2532c80c037",
+                "reference": "d9923001224b54e94f1de24017bec2532c80c037",
+                "shasum": ""
+            },
+            "require": {
+                "muyomu/database": "1.1.0"
+            },
+            "time": "2022-10-19T12:07:53+00:00",
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "muyomu\\router\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "mutian",
+                    "email": "mutian-xiangcai@outlook.com"
+                }
+            ],
+            "description": "The router of muyomu framework",
+            "support": {
+                "issues": "https://github.com/muyomu/router/issues",
+                "source": "https://github.com/muyomu/router/tree/v1.1.10"
+            },
+            "install-path": "../muyomu/router"
+        },
+        {
+            "name": "psr/log",
+            "version": "3.0.0",
+            "version_normalized": "3.0.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-fig/log.git",
+                "reference": "fe5ea303b0887d5caefd3d431c3e61ad47037001"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-fig/log/zipball/fe5ea303b0887d5caefd3d431c3e61ad47037001",
+                "reference": "fe5ea303b0887d5caefd3d431c3e61ad47037001",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=8.0.0"
+            },
+            "time": "2021-07-14T16:46:02+00:00",
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.x-dev"
+                }
+            },
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "Psr\\Log\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP-FIG",
+                    "homepage": "https://www.php-fig.org/"
+                }
+            ],
+            "description": "Common interface for logging libraries",
+            "homepage": "https://github.com/php-fig/log",
+            "keywords": [
+                "log",
+                "psr",
+                "psr-3"
+            ],
+            "support": {
+                "source": "https://github.com/php-fig/log/tree/3.0.0"
+            },
+            "install-path": "../psr/log"
+        },
+        {
+            "name": "xiangcai/mysql-connector",
+            "version": "v1.0.10",
+            "version_normalized": "1.0.10.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mutian-xiangcai/mysql-connector.git",
+                "reference": "75983ae3f740494009676eaef7ccc1ffb29cb586"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mutian-xiangcai/mysql-connector/zipball/75983ae3f740494009676eaef7ccc1ffb29cb586",
+                "reference": "75983ae3f740494009676eaef7ccc1ffb29cb586",
+                "shasum": ""
+            },
+            "time": "2022-10-18T11:15:17+00:00",
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "xiangcai\\database\\mysql\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "mutian",
+                    "email": "bhfqlz@outlook.com"
+                }
+            ],
+            "description": "The mysql connector for muyomu web frameowork",
+            "support": {
+                "issues": "https://github.com/mutian-xiangcai/mysql-connector/issues",
+                "source": "https://github.com/mutian-xiangcai/mysql-connector/tree/v1.0.10"
+            },
+            "install-path": "../xiangcai/mysql-connector"
+        }
+    ],
+    "dev": true,
+    "dev-package-names": []
+}

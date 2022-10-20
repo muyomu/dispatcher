@@ -1,0 +1,19 @@
+{
+    "name": "xiangcai/mysql-connector",
+    "description": "The mysql connector for muyomu web frameowork",
+    "license": "apache-2.0",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "xiangcai\\database\\mysql\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "mutian",
+            "email": "bhfqlz@outlook.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
