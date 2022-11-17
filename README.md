@@ -1,4 +1,4 @@
-# Dispatcher
+# muix
 
 > 项目介绍：
 > 
@@ -22,7 +22,7 @@
 
 > 文档地址：
 >
-> http://www.muyomu.com/doc/dispatcher
+> http://www.muyomu.com/doc/muix
 
 
 

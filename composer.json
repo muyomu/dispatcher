@@ -16,9 +16,7 @@
         }
     ],
     "require": {
-        "muyomu/framework": "1.1.22",
-        "monolog/monolog": "^3.2",
-        "muyomu/aop": "1.0.2",
-        "xiangcai/mysql-connector": "1.0.10"
+        "muyomu/framework": "2.0.3",
+        "muyomu/log4p": "1.0.1"
     }
 }

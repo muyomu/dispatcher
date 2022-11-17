@@ -6,6 +6,7 @@
  * --------------------------------------------------
  */
 
-use muyomu\router\routerClient;
+use muyomu\router\attribute\RuleMethod;
+use muyomu\router\RouteApi;
 
-RouterClient::rule("GET", "/", "Index", "index");
+RouteApi::rule(RuleMethod::RULE_GET, "/muix", "Index", "index");

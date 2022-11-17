@@ -8,15 +8,5 @@
  */
 
 $config_application =[
-    "application"=>"hello",
-    "root_route"=>true
-];
-
-
-$config_mysql =[
-    "mutian"=>[
-        "hostname"=>"localhost",
-        "username"=>"root",
-        "password"=>"123456"
-    ]
+    "application"=>"muix"
 ];

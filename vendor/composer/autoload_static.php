@@ -7,13 +7,10 @@ namespace Composer\Autoload;
 class ComposerStaticInitbe3febd0604170dde1689a507d1d9e72
 {
     public static $prefixLengthsPsr4 = array (
-        'x' => 
-        array (
-            'xiangcai\\database\\mysql\\' => 24,
-        ),
         'm' => 
         array (
             'muyomu\\router\\' => 14,
+            'muyomu\\log4p\\' => 13,
             'muyomu\\http\\' => 12,
             'muyomu\\framework\\' => 17,
             'muyomu\\executor\\' => 16,
@@ -25,24 +22,16 @@ class ComposerStaticInitbe3febd0604170dde1689a507d1d9e72
         array (
             'app\\' => 4,
         ),
-        'P' => 
-        array (
-            'Psr\\Log\\' => 8,
-        ),
-        'M' => 
-        array (
-            'Monolog\\' => 8,
-        ),
     );
 
     public static $prefixDirsPsr4 = array (
-        'xiangcai\\database\\mysql\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/xiangcai/mysql-connector/src',
-        ),
         'muyomu\\router\\' => 
         array (
             0 => __DIR__ . '/..' . '/muyomu/router/src',
+        ),
+        'muyomu\\log4p\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/muyomu/log4p/src',
         ),
         'muyomu\\http\\' => 
         array (
@@ -71,14 +60,6 @@ class ComposerStaticInitbe3febd0604170dde1689a507d1d9e72
         'app\\' => 
         array (
             0 => __DIR__ . '/../..' . '/app',
-        ),
-        'Psr\\Log\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/psr/log/src',
-        ),
-        'Monolog\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/monolog/monolog/src/Monolog',
         ),
     );
 
