@@ -15,11 +15,3 @@ set_exception_handler(function ($exception){
 
     echo json_encode($return, JSON_UNESCAPED_UNICODE);
 });
-
-set_error_handler(function ($errno, $errstr, $errfile, $errline){
-    muix_log_error($errno, $errstr, $errfile, $errline);
-});
-
-register_shutdown_function(function (){
-
-});

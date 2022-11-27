@@ -3,7 +3,7 @@
     "description": "The entrance of muyomu web framework",
     "type": "project",
     "license": "apache-2.0",
-    "stablity": "stable",
+    "stablity": "dev",
     "autoload": {
         "psr-4": {
             "app\\": "app/"
@@ -16,7 +16,7 @@
         }
     ],
     "require": {
-        "muyomu/framework": "2.0.3",
-        "muyomu/log4p": "1.0.1"
+        "muyomu/framework": "2.1.11",
+        "muyomu/auth": "1.0.20"
     }
 }

@@ -9,4 +9,4 @@
 use muyomu\router\attribute\RuleMethod;
 use muyomu\router\RouteApi;
 
-RouteApi::rule(RuleMethod::RULE_GET, "/muix", "Index", "index");
+RouteApi::rule(RuleMethod::RULE_GET->value, "/muix", "Index", "index");

@@ -2,20 +2,20 @@
     "packages": [
         {
             "name": "muyomu/database",
-            "version": "v2.0.0",
-            "version_normalized": "2.0.0.0",
+            "version": "v2.0.2",
+            "version_normalized": "2.0.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/muyomu/database.git",
-                "reference": "30f77abf6b247106945a0b25a4a219368d496fcb"
+                "reference": "5ce80913b931cedd6ffb9d1559e2919f9db85d8a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/muyomu/database/zipball/30f77abf6b247106945a0b25a4a219368d496fcb",
-                "reference": "30f77abf6b247106945a0b25a4a219368d496fcb",
+                "url": "https://api.github.com/repos/muyomu/database/zipball/5ce80913b931cedd6ffb9d1559e2919f9db85d8a",
+                "reference": "5ce80913b931cedd6ffb9d1559e2919f9db85d8a",
                 "shasum": ""
             },
-            "time": "2022-10-28T12:30:08+00:00",
+            "time": "2022-11-26T13:00:09+00:00",
             "type": "library",
             "installation-source": "dist",
             "autoload": {
@@ -36,7 +36,7 @@
             "description": "The database of muyomu web framework",
             "support": {
                 "issues": "https://github.com/muyomu/database/issues",
-                "source": "https://github.com/muyomu/database/tree/v2.0.0"
+                "source": "https://github.com/muyomu/database/tree/v2.0.2"
             },
             "install-path": "../muyomu/database"
         }

@@ -4,6 +4,8 @@
  * Here is the entrance of this project.
  * ------------------------------------------------------------------------------
  */
+
+use muyomu\auth\MuixAuthMiddleWare;
 use muyomu\framework\Framework;
 
 /**
@@ -11,4 +13,5 @@ use muyomu\framework\Framework;
  */
 require "../vendor/autoload.php";
 require "../system/config_autoload.php";
-Framework::main();
+
+Framework::main(new MuixAuthMiddleWare());

@@ -10,3 +10,13 @@
 $config_application =[
     "application"=>"muix"
 ];
+
+$config_log4p=[
+    "log_location"=>"../log/"
+];
+
+$config_http = [
+    "response_headers"=>[
+        "Access-Control-Allow-Origin"=>"*",
+    ]
+];
