@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PhpIncludePathManager">
+    <include_path>
+      <path value="$PROJECT_DIR$/vendor/muyomu/log4p" />
+      <path value="$PROJECT_DIR$/vendor/muyomu/router" />
+      <path value="$PROJECT_DIR$/vendor/muyomu/http" />
+      <path value="$PROJECT_DIR$/vendor/muyomu/executor" />
+      <path value="$PROJECT_DIR$/vendor/muyomu/database" />
+      <path value="$PROJECT_DIR$/vendor/muyomu/aop" />
+      <path value="$PROJECT_DIR$/vendor/muyomu/framework" />
+      <path value="$PROJECT_DIR$/vendor/composer" />
+      <path value="$PROJECT_DIR$/vendor/muyomu/middleware" />
+      <path value="$PROJECT_DIR$/vendor/muyomu/config" />
+      <path value="$PROJECT_DIR$/vendor/muyomu/dynamic" />
+      <path value="$PROJECT_DIR$/vendor/muyomu/auth" />
+      <path value="$PROJECT_DIR$/vendor/muyomu/filter" />
+    </include_path>
+  </component>
+  <component name="PhpProjectSharedConfiguration" php_language_level="8.0">
+    <option name="suggestChangeDefaultLanguageLevel" value="false" />
+  </component>
+</project>

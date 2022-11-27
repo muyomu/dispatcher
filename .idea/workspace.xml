@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="0a1b63e8-4ce7-45e2-9939-75c45e7a312f" name="Changes" comment="notices:&#10;&#10;version 2.0.4" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
+    <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration">
+    <include_path>
+      <path value="$PROJECT_DIR$/vendor/muyomu/log4p" />
+      <path value="$PROJECT_DIR$/vendor/muyomu/router" />
+      <path value="$PROJECT_DIR$/vendor/muyomu/http" />
+      <path value="$PROJECT_DIR$/vendor/muyomu/executor" />
+      <path value="$PROJECT_DIR$/vendor/muyomu/database" />
+      <path value="$PROJECT_DIR$/vendor/muyomu/aop" />
+      <path value="$PROJECT_DIR$/vendor/muyomu/framework" />
+      <path value="$PROJECT_DIR$/vendor/composer" />
+      <path value="$PROJECT_DIR$/vendor/muyomu/middleware" />
+      <path value="$PROJECT_DIR$/vendor/muyomu/config" />
+      <path value="$PROJECT_DIR$/vendor/muyomu/dynamic" />
+      <path value="$PROJECT_DIR$/vendor/muyomu/auth" />
+      <path value="$PROJECT_DIR$/vendor/muyomu/filter" />
+    </include_path>
+  </component>
+  <component name="ProjectId" id="2I7VFIAqwYzt02UoxicdOJ2d0Fe" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/Administrator/Desktop/muix/muix",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0a1b63e8-4ce7-45e2-9939-75c45e7a312f" name="Changes" comment="" />
+      <created>1669532503610</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1669532503610</updated>
+      <workItem from="1669532504774" duration="59000" />
+      <workItem from="1669533099521" duration="59000" />
+    </task>
+    <task id="LOCAL-00001" summary="notices:&#10;&#10;version 2.0.3">
+      <created>1669532542266</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1669532542266</updated>
+    </task>
+    <task id="LOCAL-00002" summary="notices:&#10;&#10;version 2.0.4">
+      <created>1669533134377</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1669533134377</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="notices:&#10;&#10;version 2.0.3" />
+    <MESSAGE value="notices:&#10;&#10;version 2.0.4" />
+    <option name="LAST_COMMIT_MESSAGE" value="notices:&#10;&#10;version 2.0.4" />
+  </component>
+</project>
