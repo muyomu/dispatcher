@@ -1,0 +1,22 @@
+{
+    "name": "muyomu/dynamic",
+    "description": "The dynamic paramater resolver of muyomu framework",
+    "type": "library",
+    "license": "apache-2.0",
+    "minimum-stability": "stable",
+    "autoload": {
+        "psr-4": {
+            "muyomu\\dpara\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "mutian"
+        }
+    ],
+    "require": {
+        "muyomu/http": "2.1.2",
+        "muyomu/router": "2.0.6",
+        "muyomu/database": "2.0.2"
+    }
+}
