@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b7bceaf95d9d8a7f1c1be0e5f7c9318b",
+    "content-hash": "8e5021b6d67888139be2c0614c1ecbfa",
     "packages": [
         {
             "name": "muyomu/aop",
@@ -159,16 +159,16 @@
         },
         {
             "name": "muyomu/dynamic",
-            "version": "v2.0.14",
+            "version": "v2.0.15",
             "source": {
                 "type": "git",
                 "url": "https://github.com/muyomu/dynamic.git",
-                "reference": "958e4d3a8d3793f1c212b48df2376f186991b70d"
+                "reference": "4cf3465b1973f20d897665b0d89fb5cf2607d574"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/muyomu/dynamic/zipball/958e4d3a8d3793f1c212b48df2376f186991b70d",
-                "reference": "958e4d3a8d3793f1c212b48df2376f186991b70d",
+                "url": "https://api.github.com/repos/muyomu/dynamic/zipball/4cf3465b1973f20d897665b0d89fb5cf2607d574",
+                "reference": "4cf3465b1973f20d897665b0d89fb5cf2607d574",
                 "shasum": ""
             },
             "require": {
@@ -194,9 +194,9 @@
             "description": "The dynamic paramater resolver of muyomu framework",
             "support": {
                 "issues": "https://github.com/muyomu/dynamic/issues",
-                "source": "https://github.com/muyomu/dynamic/tree/v2.0.14"
+                "source": "https://github.com/muyomu/dynamic/tree/v2.0.15"
             },
-            "time": "2022-11-27T06:48:33+00:00"
+            "time": "2022-11-27T08:36:46+00:00"
         },
         {
             "name": "muyomu/executor",
@@ -283,21 +283,21 @@
         },
         {
             "name": "muyomu/framework",
-            "version": "v2.1.11",
+            "version": "v2.1.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/muyomu/framework.git",
-                "reference": "8f2dd0f049ce4d84d5bce88c2835f6e17e59fb44"
+                "reference": "0d105550f5ddab4b51bf7182ffc204f09416df90"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/muyomu/framework/zipball/8f2dd0f049ce4d84d5bce88c2835f6e17e59fb44",
-                "reference": "8f2dd0f049ce4d84d5bce88c2835f6e17e59fb44",
+                "url": "https://api.github.com/repos/muyomu/framework/zipball/0d105550f5ddab4b51bf7182ffc204f09416df90",
+                "reference": "0d105550f5ddab4b51bf7182ffc204f09416df90",
                 "shasum": ""
             },
             "require": {
                 "muyomu/database": "2.0.2",
-                "muyomu/dynamic": "2.0.14",
+                "muyomu/dynamic": "2.0.15",
                 "muyomu/executor": "2.0.12",
                 "muyomu/filter": "1.0.14",
                 "muyomu/http": "2.1.2",
@@ -325,9 +325,9 @@
             "description": "The booter of muyomu framework",
             "support": {
                 "issues": "https://github.com/muyomu/framework/issues",
-                "source": "https://github.com/muyomu/framework/tree/v2.1.11"
+                "source": "https://github.com/muyomu/framework/tree/v2.1.12"
             },
-            "time": "2022-11-27T06:50:12+00:00"
+            "time": "2022-11-27T08:37:43+00:00"
         },
         {
             "name": "muyomu/http",

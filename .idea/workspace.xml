@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0a1b63e8-4ce7-45e2-9939-75c45e7a312f" name="Changes" comment="notices:&#10;&#10;version 2.0.4" />
+    <list default="true" id="0a1b63e8-4ce7-45e2-9939-75c45e7a312f" name="Changes" comment="notices:&#10;&#10;version 2.0.7">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -53,6 +55,11 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Administrator\Desktop\muix\muix\resource\file" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -64,6 +71,7 @@
       <workItem from="1669532504774" duration="59000" />
       <workItem from="1669533099521" duration="59000" />
       <workItem from="1669533919896" duration="60000" />
+      <workItem from="1669534029038" duration="158000" />
     </task>
     <task id="LOCAL-00001" summary="notices:&#10;&#10;version 2.0.3">
       <created>1669532542266</created>
@@ -79,7 +87,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669533134377</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="notices:&#10;&#10;version 2.0.7">
+      <created>1669534113221</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1669534113221</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -100,6 +115,7 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="notices:&#10;&#10;version 2.0.3" />
     <MESSAGE value="notices:&#10;&#10;version 2.0.4" />
-    <option name="LAST_COMMIT_MESSAGE" value="notices:&#10;&#10;version 2.0.4" />
+    <MESSAGE value="notices:&#10;&#10;version 2.0.7" />
+    <option name="LAST_COMMIT_MESSAGE" value="notices:&#10;&#10;version 2.0.7" />
   </component>
 </project>
