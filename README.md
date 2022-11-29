@@ -8,7 +8,7 @@
 >
 > 1. 使用git安装
 >
->    git clone https://github.com/muyomu/munix.git
+>    git clone https://github.com/muyomu/muix.git
 >
 > 2. 使用composer安装
 >
