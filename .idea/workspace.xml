@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0a1b63e8-4ce7-45e2-9939-75c45e7a312f" name="Changes" comment="notices:&#10;&#10;version 2.0.7">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="0a1b63e8-4ce7-45e2-9939-75c45e7a312f" name="Changes" comment="notices:&#10;&#10;version 2.0.8" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -11,7 +9,9 @@
   </component>
   <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
-    <execution />
+    <execution>
+      <executable path="composer" />
+    </execution>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -72,6 +72,7 @@
       <workItem from="1669533099521" duration="59000" />
       <workItem from="1669533919896" duration="60000" />
       <workItem from="1669534029038" duration="158000" />
+      <workItem from="1669538521717" duration="50000" />
     </task>
     <task id="LOCAL-00001" summary="notices:&#10;&#10;version 2.0.3">
       <created>1669532542266</created>
@@ -94,7 +95,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669534113221</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="notices:&#10;&#10;version 2.0.8">
+      <created>1669538542003</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1669538542003</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -116,6 +124,7 @@
     <MESSAGE value="notices:&#10;&#10;version 2.0.3" />
     <MESSAGE value="notices:&#10;&#10;version 2.0.4" />
     <MESSAGE value="notices:&#10;&#10;version 2.0.7" />
-    <option name="LAST_COMMIT_MESSAGE" value="notices:&#10;&#10;version 2.0.7" />
+    <MESSAGE value="notices:&#10;&#10;version 2.0.8" />
+    <option name="LAST_COMMIT_MESSAGE" value="notices:&#10;&#10;version 2.0.8" />
   </component>
 </project>

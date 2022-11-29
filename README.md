@@ -1,4 +1,4 @@
-# muix
+# Muix
 
 > 项目介绍：
 > 
@@ -8,11 +8,11 @@
 >
 > 1. 使用git安装
 >
->    git clone https://github.com/muyomu/munix.git
+>    git clone https://github.com/muyomu/muix.git
 >
 > 2. 使用composer安装
 >
->    composer create-project muyomu/dispatcher
+>    composer create-project muyomu/muix
 
 > 配置说明：
 >

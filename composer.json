@@ -9,14 +9,7 @@
             "app\\": "app/"
         }
     },
-    "authors": [
-        {
-            "name": "mutian",
-            "email": "mutian-xiangcai@outlook.com"
-        }
-    ],
     "require": {
-        "muyomu/framework": "2.1.12",
-        "muyomu/auth": "1.0.20"
+        "muyomu/framework": "2.2.1"
     }
 }

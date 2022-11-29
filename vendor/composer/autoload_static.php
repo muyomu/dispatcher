@@ -71,7 +71,7 @@ class ComposerStaticInitbe3febd0604170dde1689a507d1d9e72
         ),
         'muyomu\\auth\\' => 
         array (
-            0 => __DIR__ . '/..' . '/muyomu/auth/src',
+            0 => __DIR__ . '/..' . '/muyomu/security/src',
         ),
         'muyomu\\aop\\' => 
         array (

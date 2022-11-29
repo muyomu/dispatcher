@@ -16,7 +16,7 @@ return array(
     'muyomu\\dpara\\' => array($vendorDir . '/muyomu/dynamic/src'),
     'muyomu\\database\\' => array($vendorDir . '/muyomu/database/src'),
     'muyomu\\config\\' => array($vendorDir . '/muyomu/config/src'),
-    'muyomu\\auth\\' => array($vendorDir . '/muyomu/auth/src'),
+    'muyomu\\auth\\' => array($vendorDir . '/muyomu/security/src'),
     'muyomu\\aop\\' => array($vendorDir . '/muyomu/aop/src'),
     'app\\' => array($baseDir . '/app'),
 );

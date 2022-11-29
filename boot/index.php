@@ -14,4 +14,4 @@ use muyomu\framework\Framework;
 require "../vendor/autoload.php";
 require "../system/config_autoload.php";
 
-Framework::main(new MuixAuthMiddleWare());
+Framework::main();
