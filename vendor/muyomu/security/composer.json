@@ -1,0 +1,24 @@
+{
+    "name": "muyomu/security",
+    "description": "The auth framework for muyomu web framework",
+    "type": "library",
+    "license": "apache-2.0",
+    "autoload": {
+        "psr-4": {
+            "muyomu\\auth\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "mutian",
+            "email": "bhfqlz@qq.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "muyomu/middleware": "1.0.4",
+        "muyomu/config": "1.1.4",
+        "muyomu/http": "2.1.3",
+        "muyomu/log4p": "1.1.4"
+    }
+}
