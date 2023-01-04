@@ -3,7 +3,7 @@
         'name' => 'muyomu/aop',
         'pretty_version' => 'dev-main',
         'version' => 'dev-main',
-        'reference' => '78280b80b5e0b7d51ad1799240981565fedc630a',
+        'reference' => '7cd9e1058026718645c39659deafa80df7669baf',
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -13,7 +13,7 @@
         'muyomu/aop' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
-            'reference' => '78280b80b5e0b7d51ad1799240981565fedc630a',
+            'reference' => '7cd9e1058026718645c39659deafa80df7669baf',
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),

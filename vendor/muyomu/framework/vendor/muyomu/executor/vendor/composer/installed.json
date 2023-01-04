@@ -2,22 +2,22 @@
     "packages": [
         {
             "name": "muyomu/aop",
-            "version": "v1.0.6",
-            "version_normalized": "1.0.6.0",
+            "version": "v1.0.11",
+            "version_normalized": "1.0.11.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/muyomu/aop.git",
-                "reference": "ed9e394251d7436f52df639395ba3b5feff7aa8d"
+                "reference": "cc3b5c9729443c2df341e7c586486894e595a4e8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/muyomu/aop/zipball/ed9e394251d7436f52df639395ba3b5feff7aa8d",
-                "reference": "ed9e394251d7436f52df639395ba3b5feff7aa8d",
+                "url": "https://api.github.com/repos/muyomu/aop/zipball/cc3b5c9729443c2df341e7c586486894e595a4e8",
+                "reference": "cc3b5c9729443c2df341e7c586486894e595a4e8",
                 "shasum": ""
             },
-            "time": "2022-11-19T00:31:50+00:00",
+            "time": "2023-01-04T02:19:48+00:00",
             "type": "library",
-            "installation-source": "dist",
+            "installation-source": "source",
             "autoload": {
                 "psr-4": {
                     "muyomu\\aop\\": "src/"
@@ -30,32 +30,32 @@
             "authors": [
                 {
                     "name": "mutian",
-                    "email": "bhfqlz@qq.com"
+                    "email": "mutian-xiangcai@outlook.com"
                 }
             ],
             "description": "The aop framework for muyomu web framework",
             "support": {
                 "issues": "https://github.com/muyomu/aop/issues",
-                "source": "https://github.com/muyomu/aop/tree/v1.0.6"
+                "source": "https://github.com/muyomu/aop/tree/v1.0.11"
             },
             "install-path": "../muyomu/aop"
         },
         {
             "name": "muyomu/config",
-            "version": "v1.1.4",
-            "version_normalized": "1.1.4.0",
+            "version": "v1.1.5",
+            "version_normalized": "1.1.5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/muyomu/config.git",
-                "reference": "cc4868bac87038e17b61ed929221cbd679306540"
+                "reference": "6f9045d5c9db392e23f4f31cfde63dff0b9966a3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/muyomu/config/zipball/cc4868bac87038e17b61ed929221cbd679306540",
-                "reference": "cc4868bac87038e17b61ed929221cbd679306540",
+                "url": "https://api.github.com/repos/muyomu/config/zipball/6f9045d5c9db392e23f4f31cfde63dff0b9966a3",
+                "reference": "6f9045d5c9db392e23f4f31cfde63dff0b9966a3",
                 "shasum": ""
             },
-            "time": "2022-11-28T09:34:31+00:00",
+            "time": "2023-01-03T10:25:07+00:00",
             "type": "library",
             "installation-source": "dist",
             "autoload": {
@@ -76,7 +76,7 @@
             "description": "The config framework for muyomu web framework",
             "support": {
                 "issues": "https://github.com/muyomu/config/issues",
-                "source": "https://github.com/muyomu/config/tree/v1.1.4"
+                "source": "https://github.com/muyomu/config/tree/v1.1.5"
             },
             "install-path": "../muyomu/config"
         },
@@ -122,26 +122,26 @@
         },
         {
             "name": "muyomu/http",
-            "version": "v2.1.3",
-            "version_normalized": "2.1.3.0",
+            "version": "v2.1.4",
+            "version_normalized": "2.1.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/muyomu/http.git",
-                "reference": "bbec6c05db9ed6140d1adcf02391e289de6bc24d"
+                "reference": "72e3c72cd1d8db29c911432ec95708a148860378"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/muyomu/http/zipball/bbec6c05db9ed6140d1adcf02391e289de6bc24d",
-                "reference": "bbec6c05db9ed6140d1adcf02391e289de6bc24d",
+                "url": "https://api.github.com/repos/muyomu/http/zipball/72e3c72cd1d8db29c911432ec95708a148860378",
+                "reference": "72e3c72cd1d8db29c911432ec95708a148860378",
                 "shasum": ""
             },
             "require": {
-                "muyomu/config": "1.1.4",
+                "muyomu/config": "1.1.5",
                 "muyomu/database": "2.0.2",
-                "muyomu/log4p": "1.1.4",
+                "muyomu/log4p": "1.1.5",
                 "muyomu/router": "2.0.6"
             },
-            "time": "2022-11-28T09:40:12+00:00",
+            "time": "2023-01-03T11:33:07+00:00",
             "type": "library",
             "installation-source": "dist",
             "autoload": {
@@ -162,29 +162,72 @@
             "description": "The http helper of muyomu web framework",
             "support": {
                 "issues": "https://github.com/muyomu/http/issues",
-                "source": "https://github.com/muyomu/http/tree/v2.1.3"
+                "source": "https://github.com/muyomu/http/tree/v2.1.4"
             },
             "install-path": "../muyomu/http"
         },
         {
-            "name": "muyomu/log4p",
-            "version": "v1.1.4",
-            "version_normalized": "1.1.4.0",
+            "name": "muyomu/inject",
+            "version": "v1.0.4",
+            "version_normalized": "1.0.4.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/muyomu/logger.git",
-                "reference": "790f20eaf31f6c9695ab61a67d6cdb2d4ba1a229"
+                "url": "https://github.com/muyomu/inject.git",
+                "reference": "87d4fa789447527a95c45e33a480c08bad4569e9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/muyomu/logger/zipball/790f20eaf31f6c9695ab61a67d6cdb2d4ba1a229",
-                "reference": "790f20eaf31f6c9695ab61a67d6cdb2d4ba1a229",
+                "url": "https://api.github.com/repos/muyomu/inject/zipball/87d4fa789447527a95c45e33a480c08bad4569e9",
+                "reference": "87d4fa789447527a95c45e33a480c08bad4569e9",
                 "shasum": ""
             },
             "require": {
-                "muyomu/config": "1.1.4"
+                "muyomu/log4p": "v1.1.5"
             },
-            "time": "2022-11-28T09:39:10+00:00",
+            "time": "2023-01-03T11:46:20+00:00",
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "muyomu\\inject\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "mutian",
+                    "email": "bhfqlz@outlook.com"
+                }
+            ],
+            "description": "The auto-wired framework to muyomu web framework",
+            "support": {
+                "issues": "https://github.com/muyomu/inject/issues",
+                "source": "https://github.com/muyomu/inject/tree/v1.0.4"
+            },
+            "install-path": "../muyomu/inject"
+        },
+        {
+            "name": "muyomu/log4p",
+            "version": "v1.1.5",
+            "version_normalized": "1.1.5.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/muyomu/logger.git",
+                "reference": "a3de2b6d9c31839d18e34cbc59b210a3f877b524"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/muyomu/logger/zipball/a3de2b6d9c31839d18e34cbc59b210a3f877b524",
+                "reference": "a3de2b6d9c31839d18e34cbc59b210a3f877b524",
+                "shasum": ""
+            },
+            "require": {
+                "muyomu/config": "1.1.5"
+            },
+            "time": "2023-01-03T11:31:27+00:00",
             "type": "library",
             "installation-source": "dist",
             "autoload": {
@@ -205,7 +248,7 @@
             "description": "The log framework for muyomu web framework",
             "support": {
                 "issues": "https://github.com/muyomu/logger/issues",
-                "source": "https://github.com/muyomu/logger/tree/v1.1.4"
+                "source": "https://github.com/muyomu/logger/tree/v1.1.5"
             },
             "install-path": "../muyomu/log4p"
         },

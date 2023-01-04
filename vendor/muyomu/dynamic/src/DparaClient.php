@@ -29,6 +29,7 @@ class DparaClient implements Dpara
      * @param Response $response
      * @param DbClient $dbClient
      * @return void
+     * @throws UrlNotMatch
      */
     public function dpara(Request $request,Response $response, DbClient $dbClient): void
     {
@@ -53,8 +54,9 @@ class DparaClient implements Dpara
         $document = $this->dparaHelper->key_exits($request,$response,$static_routes_table,$kk,$dbClient->database,$keyCollector,$dataCollector);
 
         if (is_null($document)){
+            var_dump($document);
             $this->log4p->muix_log_warn(__CLASS__,__METHOD__,__LINE__,"Url Not Match");
-            $response->doExceptionResponse(new UrlNotMatch(),400);
+            throw new UrlNotMatch();
         }
 
         /*
@@ -93,7 +95,6 @@ class DparaClient implements Dpara
         array_shift($one);
         $mdl = $one;
         $collector = array();
-        $index = count($one);
         $uk = '/';
         foreach ( $one as $item){
             if ($uk  == "/"){

@@ -10,6 +10,7 @@
         }
     },
     "require": {
-        "muyomu/framework": "2.2.1"
+        "muyomu/framework": "2.2.29",
+        "muyomu/server": "1.0.1"
     }
 }

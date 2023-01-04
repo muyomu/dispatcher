@@ -7,13 +7,33 @@
  * --------------------------------------------------------------------
  */
 
-$config_application =[
-    "application"=>"muix"
-];
+use muyomu\auth\config\DefaultSecurityConfig;
+use muyomu\config\ConfigApi;
+use muyomu\dashboard\identifier\ApplicationConfig;
+use muyomu\executor\config\DefaultExecutorConfig;
+use muyomu\server\config\DefaultServerConfig;
 
-$config_log4p=[
-    "log_location"=>"../log/"
-];
+ConfigApi::configure(ApplicationConfig::class,array(
+    "application"=>"muix"
+));
+
+ConfigApi::configure(DefaultServerConfig::class,array(
+    "port"=>80
+));
+
+ConfigApi::configure(DefaultExecutorConfig::class,array(
+    "autoInject"=>true
+));
+
+ConfigApi::configure(DefaultSecurityConfig::class,array(
+    "security"=>true,
+    "obverse"=>[
+        "/muix"=>[
+            "roles"=>[],
+            "privileges"=>[]
+        ]
+    ]
+));
 
 $config_http = [
     "response_headers"=>[

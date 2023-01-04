@@ -9,15 +9,18 @@ class ComposerStaticInitbe3febd0604170dde1689a507d1d9e72
     public static $prefixLengthsPsr4 = array (
         'm' => 
         array (
+            'muyomu\\server\\' => 14,
             'muyomu\\router\\' => 14,
             'muyomu\\middleware\\' => 18,
             'muyomu\\log4p\\' => 13,
+            'muyomu\\inject\\' => 14,
             'muyomu\\http\\' => 12,
             'muyomu\\framework\\' => 17,
             'muyomu\\filter\\' => 14,
             'muyomu\\executor\\' => 16,
             'muyomu\\dpara\\' => 13,
             'muyomu\\database\\' => 16,
+            'muyomu\\dashboard\\' => 17,
             'muyomu\\config\\' => 14,
             'muyomu\\auth\\' => 12,
             'muyomu\\aop\\' => 11,
@@ -29,6 +32,10 @@ class ComposerStaticInitbe3febd0604170dde1689a507d1d9e72
     );
 
     public static $prefixDirsPsr4 = array (
+        'muyomu\\server\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/muyomu/server/src',
+        ),
         'muyomu\\router\\' => 
         array (
             0 => __DIR__ . '/..' . '/muyomu/router/src',
@@ -40,6 +47,10 @@ class ComposerStaticInitbe3febd0604170dde1689a507d1d9e72
         'muyomu\\log4p\\' => 
         array (
             0 => __DIR__ . '/..' . '/muyomu/log4p/src',
+        ),
+        'muyomu\\inject\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/muyomu/inject/src',
         ),
         'muyomu\\http\\' => 
         array (
@@ -64,6 +75,10 @@ class ComposerStaticInitbe3febd0604170dde1689a507d1d9e72
         'muyomu\\database\\' => 
         array (
             0 => __DIR__ . '/..' . '/muyomu/database/src',
+        ),
+        'muyomu\\dashboard\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/muyomu/dashboard/src',
         ),
         'muyomu\\config\\' => 
         array (
