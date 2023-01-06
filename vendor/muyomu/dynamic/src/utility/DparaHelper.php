@@ -13,7 +13,7 @@ class DparaHelper implements UrlValidate
     /**
      * @throws UrlNotMatch
      */
-    public function key_exits(Request $request, Response $response, array $static_routes_table, array $request_routs_table, array $dbClient, array &$keyCollector, array &$dataCollector): Document |null
+    public function key_exits(Request $request, Response $response, array $static_routes_table, array $request_routs_table, array $dbClient, array &$keyCollector, array &$dataCollector): Document |bool
     {
         $keys = array_keys($request_routs_table);
 
@@ -53,13 +53,12 @@ class DparaHelper implements UrlValidate
 
 	            here:
                 if (is_null($point)){
-                    return null;
+                    return false;
                 }
-
                 //保存route到request
                 return new Document($dbClient[$point]->getData());
             }
         }
-        return null;
+        return false;
     }
 }

@@ -26,7 +26,7 @@ ConfigApi::configure(DefaultExecutorConfig::class,array(
 ));
 
 ConfigApi::configure(DefaultSecurityConfig::class,array(
-    "security"=>true,
+    "security"=>false,
     "obverse"=>[
         "/muix"=>[
             "roles"=>[],

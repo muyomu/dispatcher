@@ -9,8 +9,8 @@ class ComposerStaticInitbe3febd0604170dde1689a507d1d9e72
     public static $prefixLengthsPsr4 = array (
         'm' => 
         array (
-            'muyomu\\server\\' => 14,
             'muyomu\\router\\' => 14,
+            'muyomu\\punit\\' => 13,
             'muyomu\\middleware\\' => 18,
             'muyomu\\log4p\\' => 13,
             'muyomu\\inject\\' => 14,
@@ -32,13 +32,13 @@ class ComposerStaticInitbe3febd0604170dde1689a507d1d9e72
     );
 
     public static $prefixDirsPsr4 = array (
-        'muyomu\\server\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/muyomu/server/src',
-        ),
         'muyomu\\router\\' => 
         array (
             0 => __DIR__ . '/..' . '/muyomu/router/src',
+        ),
+        'muyomu\\punit\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/muyomu/punit/src',
         ),
         'muyomu\\middleware\\' => 
         array (

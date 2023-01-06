@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "66f88e81233ce41c6cb6ecafbbf781c4",
+    "content-hash": "8f020797d9a73401420c48fa59c4be9d",
     "packages": [
         {
             "name": "muyomu/aop",
@@ -286,21 +286,21 @@
         },
         {
             "name": "muyomu/framework",
-            "version": "v2.2.29",
+            "version": "v2.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/muyomu/framework.git",
-                "reference": "aa03f370e18bbb86070d96dba1072ff53e5a51a4"
+                "reference": "bc89440dad5cae20b3c33e366495a6433f5848bc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/muyomu/framework/zipball/aa03f370e18bbb86070d96dba1072ff53e5a51a4",
-                "reference": "aa03f370e18bbb86070d96dba1072ff53e5a51a4",
+                "url": "https://api.github.com/repos/muyomu/framework/zipball/bc89440dad5cae20b3c33e366495a6433f5848bc",
+                "reference": "bc89440dad5cae20b3c33e366495a6433f5848bc",
                 "shasum": ""
             },
             "require": {
                 "muyomu/config": "1.1.5",
-                "muyomu/dashboard": "v1.0.2",
+                "muyomu/dashboard": "1.0.2",
                 "muyomu/database": "2.0.2",
                 "muyomu/dynamic": "2.1.19",
                 "muyomu/executor": "2.0.20",
@@ -308,6 +308,7 @@
                 "muyomu/http": "2.1.4",
                 "muyomu/log4p": "1.1.5",
                 "muyomu/middleware": "1.0.5",
+                "muyomu/punit": "1.0.2",
                 "muyomu/router": "2.0.6",
                 "muyomu/security": "2.1.16",
                 "php": ">=8.1"
@@ -331,9 +332,9 @@
             "description": "The booter of muyomu framework",
             "support": {
                 "issues": "https://github.com/muyomu/framework/issues",
-                "source": "https://github.com/muyomu/framework/tree/v2.2.29"
+                "source": "https://github.com/muyomu/framework/tree/v2.3.0"
             },
-            "time": "2023-01-04T05:47:46+00:00"
+            "time": "2023-01-06T06:00:23+00:00"
         },
         {
             "name": "muyomu/http",
@@ -499,6 +500,47 @@
             "time": "2023-01-03T11:38:20+00:00"
         },
         {
+            "name": "muyomu/punit",
+            "version": "v1.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/muyomu/punit.git",
+                "reference": "e144fa9b5dabd7257c1aad8955b13375978062d6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/muyomu/punit/zipball/e144fa9b5dabd7257c1aad8955b13375978062d6",
+                "reference": "e144fa9b5dabd7257c1aad8955b13375978062d6",
+                "shasum": ""
+            },
+            "require": {
+                "muyomu/aop": "1.0.11",
+                "muyomu/inject": "1.0.4"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "muyomu\\punit\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "mutian",
+                    "email": "bhfqlz@outlook.com"
+                }
+            ],
+            "description": "The unit test",
+            "support": {
+                "issues": "https://github.com/muyomu/punit/issues",
+                "source": "https://github.com/muyomu/punit/tree/v1.0.2"
+            },
+            "time": "2023-01-06T05:29:01+00:00"
+        },
+        {
             "name": "muyomu/router",
             "version": "v2.0.6",
             "source": {
@@ -582,46 +624,6 @@
                 "source": "https://github.com/muyomu/security/tree/v2.1.16"
             },
             "time": "2023-01-04T05:44:54+00:00"
-        },
-        {
-            "name": "muyomu/server",
-            "version": "v1.0.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/muyomu/server.git",
-                "reference": "36a974373ceba5f10a870a8a42602273424977c3"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/muyomu/server/zipball/36a974373ceba5f10a870a8a42602273424977c3",
-                "reference": "36a974373ceba5f10a870a8a42602273424977c3",
-                "shasum": ""
-            },
-            "require": {
-                "muyomu/config": "1.1.5"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "muyomu\\server\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "apache-2.0"
-            ],
-            "authors": [
-                {
-                    "name": "mutian",
-                    "email": "bhfqlz@outlook.com"
-                }
-            ],
-            "description": "The starter library for muyomu web framework",
-            "support": {
-                "issues": "https://github.com/muyomu/server/issues",
-                "source": "https://github.com/muyomu/server/tree/v1.0.1"
-            },
-            "time": "2023-01-04T07:04:14+00:00"
         }
     ],
     "packages-dev": [],

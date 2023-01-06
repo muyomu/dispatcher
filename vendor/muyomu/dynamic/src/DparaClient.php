@@ -53,9 +53,8 @@ class DparaClient implements Dpara
 
         $document = $this->dparaHelper->key_exits($request,$response,$static_routes_table,$kk,$dbClient->database,$keyCollector,$dataCollector);
 
-        if (is_null($document)){
+        if ($document == false){
             var_dump($document);
-            $this->log4p->muix_log_warn(__CLASS__,__METHOD__,__LINE__,"Url Not Match");
             throw new UrlNotMatch();
         }
 

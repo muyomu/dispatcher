@@ -112,6 +112,9 @@ class CreateApp implements Serve
          */
         $this->do_dynamic_parameter_resolve($request,$response);
 
+
+       $request->getRequestMethod();
+
         /*
          * 解析处理全局中间件
          */
