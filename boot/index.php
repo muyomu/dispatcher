@@ -5,7 +5,6 @@
  * ------------------------------------------------------------------------------
  */
 
-use muyomu\auth\MuixAuthMiddleWare;
 use muyomu\framework\Framework;
 
 /**

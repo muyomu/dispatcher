@@ -10,6 +10,6 @@ class Index extends BaseController
 {
     private function index():string
     {
-        return "hello,muix";
+        return "Hello,Muix";
     }
 }

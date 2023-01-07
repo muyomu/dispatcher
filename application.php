@@ -9,34 +9,24 @@
 
 use muyomu\auth\config\DefaultSecurityConfig;
 use muyomu\config\ConfigApi;
-use muyomu\dashboard\identifier\ApplicationConfig;
 use muyomu\executor\config\DefaultExecutorConfig;
-use muyomu\server\config\DefaultServerConfig;
+use muyomu\framework\config\DefaultApplicationConfig;
+use muyomu\http\config\DefaultHttpConfig;
 
-ConfigApi::configure(ApplicationConfig::class,array(
+ConfigApi::configure(DefaultApplicationConfig::class,array(
     "application"=>"muix"
 ));
 
-ConfigApi::configure(DefaultServerConfig::class,array(
-    "port"=>80
+ConfigApi::configure(DefaultSecurityConfig::class,array(
+    "security"=>false
 ));
 
 ConfigApi::configure(DefaultExecutorConfig::class,array(
     "autoInject"=>true
 ));
 
-ConfigApi::configure(DefaultSecurityConfig::class,array(
-    "security"=>false,
-    "obverse"=>[
-        "/muix"=>[
-            "roles"=>[],
-            "privileges"=>[]
-        ]
-    ]
-));
-
-$config_http = [
-    "response_headers"=>[
+ConfigApi::configure(DefaultHttpConfig::class,array(
+    "headers"=>[
         "Access-Control-Allow-Origin"=>"*",
     ]
-];
+));

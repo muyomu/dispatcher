@@ -20,7 +20,6 @@ class ComposerStaticInitbe3febd0604170dde1689a507d1d9e72
             'muyomu\\executor\\' => 16,
             'muyomu\\dpara\\' => 13,
             'muyomu\\database\\' => 16,
-            'muyomu\\dashboard\\' => 17,
             'muyomu\\config\\' => 14,
             'muyomu\\auth\\' => 12,
             'muyomu\\aop\\' => 11,
@@ -75,10 +74,6 @@ class ComposerStaticInitbe3febd0604170dde1689a507d1d9e72
         'muyomu\\database\\' => 
         array (
             0 => __DIR__ . '/..' . '/muyomu/database/src',
-        ),
-        'muyomu\\dashboard\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/muyomu/dashboard/src',
         ),
         'muyomu\\config\\' => 
         array (
