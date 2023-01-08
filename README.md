@@ -12,7 +12,7 @@
 >
 > 2. 使用composer安装
 >
->    composer create-project muyomu/muix:*.*.*(具体版本请移步官网)
+>    composer create-project muyomu/muix
 
 > 配置说明：
 >

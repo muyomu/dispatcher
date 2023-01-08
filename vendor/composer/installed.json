@@ -17,7 +17,7 @@
             },
             "time": "2023-01-04T02:19:48+00:00",
             "type": "library",
-            "installation-source": "dist",
+            "installation-source": "source",
             "autoload": {
                 "psr-4": {
                     "muyomu\\aop\\": "src/"
@@ -57,7 +57,7 @@
             },
             "time": "2023-01-03T10:25:07+00:00",
             "type": "library",
-            "installation-source": "dist",
+            "installation-source": "source",
             "autoload": {
                 "psr-4": {
                     "muyomu\\config\\": "src/"
@@ -97,7 +97,7 @@
             },
             "time": "2022-11-26T13:00:09+00:00",
             "type": "library",
-            "installation-source": "dist",
+            "installation-source": "source",
             "autoload": {
                 "psr-4": {
                     "muyomu\\database\\": "src/"
@@ -142,7 +142,7 @@
             },
             "time": "2023-01-07T03:21:36+00:00",
             "type": "library",
-            "installation-source": "dist",
+            "installation-source": "source",
             "autoload": {
                 "psr-4": {
                     "muyomu\\dpara\\": "src/"
@@ -189,7 +189,7 @@
             },
             "time": "2023-01-07T03:37:51+00:00",
             "type": "library",
-            "installation-source": "dist",
+            "installation-source": "source",
             "autoload": {
                 "psr-4": {
                     "muyomu\\executor\\": "src/"
@@ -232,7 +232,7 @@
             },
             "time": "2023-01-07T03:35:16+00:00",
             "type": "library",
-            "installation-source": "dist",
+            "installation-source": "source",
             "autoload": {
                 "psr-4": {
                     "muyomu\\filter\\": "src/"
@@ -257,17 +257,17 @@
         },
         {
             "name": "muyomu/framework",
-            "version": "v2.3.12",
-            "version_normalized": "2.3.12.0",
+            "version": "v2.3.18",
+            "version_normalized": "2.3.18.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/muyomu/framework.git",
-                "reference": "f7c2fcd28e617bd235dc5bb0a1b36a5eb7cf359b"
+                "reference": "9da43eb01ff49776cc4e1d881b46f2bce663e5e9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/muyomu/framework/zipball/f7c2fcd28e617bd235dc5bb0a1b36a5eb7cf359b",
-                "reference": "f7c2fcd28e617bd235dc5bb0a1b36a5eb7cf359b",
+                "url": "https://api.github.com/repos/muyomu/framework/zipball/9da43eb01ff49776cc4e1d881b46f2bce663e5e9",
+                "reference": "9da43eb01ff49776cc4e1d881b46f2bce663e5e9",
                 "shasum": ""
             },
             "require": {
@@ -284,9 +284,9 @@
                 "muyomu/security": "1.1.25",
                 "php": ">=8.1"
             },
-            "time": "2023-01-07T03:50:15+00:00",
+            "time": "2023-01-08T01:11:18+00:00",
             "type": "library",
-            "installation-source": "dist",
+            "installation-source": "source",
             "autoload": {
                 "psr-4": {
                     "muyomu\\framework\\": "src/"
@@ -305,7 +305,7 @@
             "description": "The booter of muyomu framework",
             "support": {
                 "issues": "https://github.com/muyomu/framework/issues",
-                "source": "https://github.com/muyomu/framework/tree/v2.3.12"
+                "source": "https://github.com/muyomu/framework/tree/v2.3.18"
             },
             "install-path": "../muyomu/framework"
         },
@@ -331,7 +331,7 @@
             },
             "time": "2023-01-07T03:15:36+00:00",
             "type": "library",
-            "installation-source": "dist",
+            "installation-source": "source",
             "autoload": {
                 "psr-4": {
                     "muyomu\\http\\": "src/"
@@ -374,7 +374,7 @@
             },
             "time": "2023-01-03T11:46:20+00:00",
             "type": "library",
-            "installation-source": "dist",
+            "installation-source": "source",
             "autoload": {
                 "psr-4": {
                     "muyomu\\inject\\": "src/"
@@ -417,7 +417,7 @@
             },
             "time": "2023-01-03T11:31:27+00:00",
             "type": "library",
-            "installation-source": "dist",
+            "installation-source": "source",
             "autoload": {
                 "psr-4": {
                     "muyomu\\log4p\\": "src/"
@@ -460,7 +460,7 @@
             },
             "time": "2023-01-07T03:18:58+00:00",
             "type": "library",
-            "installation-source": "dist",
+            "installation-source": "source",
             "autoload": {
                 "psr-4": {
                     "muyomu\\middleware\\": "src/"
@@ -504,7 +504,7 @@
             },
             "time": "2023-01-07T03:49:22+00:00",
             "type": "library",
-            "installation-source": "dist",
+            "installation-source": "source",
             "autoload": {
                 "psr-4": {
                     "muyomu\\punit\\": "src/"
@@ -547,7 +547,7 @@
             },
             "time": "2022-11-26T13:19:24+00:00",
             "type": "library",
-            "installation-source": "dist",
+            "installation-source": "source",
             "autoload": {
                 "psr-4": {
                     "muyomu\\router\\": "src/"
@@ -595,7 +595,7 @@
             },
             "time": "2023-01-07T03:34:04+00:00",
             "type": "library",
-            "installation-source": "dist",
+            "installation-source": "source",
             "autoload": {
                 "psr-4": {
                     "muyomu\\auth\\": "src/"

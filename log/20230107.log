@@ -1,0 +1,3 @@
+[2023-01-07 09:20:32] [ERROR]:    muyomu\framework\filter\RequestRootRuteFilter:muyomu\framework\filter\RequestRootRuteFilter::filter:  <32>   The request protocol version is not supported
+[2023-01-07 05:38:30] [ERROR]:    muyomu\framework\filter\RequestRootRuteFilter:muyomu\framework\filter\RequestRootRuteFilter::filter:  <32>   The request protocol version is not supported
+[2023-01-07 10:17:01] [ERROR]:    muyomu\framework\filter\RequestRootRuteFilter:muyomu\framework\filter\RequestRootRuteFilter::filter:  <32>   The request protocol version is not supported

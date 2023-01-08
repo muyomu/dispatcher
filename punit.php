@@ -9,14 +9,11 @@ use muyomu\punit\utility\TestUtility;
 include "vendor/autoload.php";
 include "application.php";
 
-
-/*
- * Here is the dev-version unit test framework,you can run this file as php script by php exe.
- */
 class MyTest extends GenericTest
 {
     #[AutoWired(TestUtility::class)]
     private TestUtility $testUtility;
+
 
     /**
      * @throws ReflectionException

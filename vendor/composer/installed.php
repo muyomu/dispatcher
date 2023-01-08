@@ -65,9 +65,9 @@
             'dev_requirement' => false,
         ),
         'muyomu/framework' => array(
-            'pretty_version' => 'v2.3.12',
-            'version' => '2.3.12.0',
-            'reference' => 'f7c2fcd28e617bd235dc5bb0a1b36a5eb7cf359b',
+            'pretty_version' => 'v2.3.18',
+            'version' => '2.3.18.0',
+            'reference' => '9da43eb01ff49776cc4e1d881b46f2bce663e5e9',
             'type' => 'library',
             'install_path' => __DIR__ . '/../muyomu/framework',
             'aliases' => array(),

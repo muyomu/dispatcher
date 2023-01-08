@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "48f303c00a8f8e85e17aa09a35075aff",
+    "content-hash": "49207290b3647dc71f92a51c42a791b7",
     "packages": [
         {
             "name": "muyomu/aop",
@@ -245,16 +245,16 @@
         },
         {
             "name": "muyomu/framework",
-            "version": "v2.3.12",
+            "version": "v2.3.18",
             "source": {
                 "type": "git",
                 "url": "https://github.com/muyomu/framework.git",
-                "reference": "f7c2fcd28e617bd235dc5bb0a1b36a5eb7cf359b"
+                "reference": "9da43eb01ff49776cc4e1d881b46f2bce663e5e9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/muyomu/framework/zipball/f7c2fcd28e617bd235dc5bb0a1b36a5eb7cf359b",
-                "reference": "f7c2fcd28e617bd235dc5bb0a1b36a5eb7cf359b",
+                "url": "https://api.github.com/repos/muyomu/framework/zipball/9da43eb01ff49776cc4e1d881b46f2bce663e5e9",
+                "reference": "9da43eb01ff49776cc4e1d881b46f2bce663e5e9",
                 "shasum": ""
             },
             "require": {
@@ -290,9 +290,9 @@
             "description": "The booter of muyomu framework",
             "support": {
                 "issues": "https://github.com/muyomu/framework/issues",
-                "source": "https://github.com/muyomu/framework/tree/v2.3.12"
+                "source": "https://github.com/muyomu/framework/tree/v2.3.18"
             },
-            "time": "2023-01-07T03:50:15+00:00"
+            "time": "2023-01-08T01:11:18+00:00"
         },
         {
             "name": "muyomu/http",

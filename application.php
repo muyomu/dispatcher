@@ -17,12 +17,18 @@ ConfigApi::configure(DefaultApplicationConfig::class,array(
     "application"=>"muix"
 ));
 
-ConfigApi::configure(DefaultSecurityConfig::class,array(
-    "security"=>false
-));
-
 ConfigApi::configure(DefaultExecutorConfig::class,array(
     "autoInject"=>true
+));
+
+ConfigApi::configure(DefaultSecurityConfig::class,array(
+    "security"=>false,
+    "obverse"=>[
+        "/muix"=>[
+            "roles"=>[],
+            "privileges"=>[]
+        ]
+    ]
 ));
 
 ConfigApi::configure(DefaultHttpConfig::class,array(

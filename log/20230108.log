@@ -1,0 +1,5 @@
+[2023-01-08 09:09:01] [INFO]:    ext load : sockets should be set to load but not be loaded!
+[2023-01-08 09:13:02] [INFO]:    ext load : sockets should be set to load but not be loaded!
+[2023-01-08 09:13:03] [INFO]:    ext load : sockets should be set to load but not be loaded!
+[2023-01-08 09:13:04] [INFO]:    ext load : sockets should be set to load but not be loaded!
+[2023-01-08 14:09:09] [ERROR]:    muyomu\framework\filter\RequestRootRuteFilter:muyomu\framework\filter\RequestRootRuteFilter::filter:  <32>   The request protocol version is not supported
