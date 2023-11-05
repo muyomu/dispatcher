@@ -3,13 +3,13 @@
     "description": "The entrance of muyomu web framework",
     "type": "project",
     "license": "apache-2.0",
-    "stablity": "dev",
+    "minimum-stablity": "dev",
     "autoload": {
         "psr-4": {
             "app\\": "app/"
         }
     },
     "require": {
-        "muyomu/framework": "2.3.18"
+        "muyomu/framework": "2.4.15"
     }
 }

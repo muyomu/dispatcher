@@ -16,17 +16,15 @@
         }
     ],
     "require": {
-        "php": ">=8.1",
-        "muyomu/router": "2.0.6",
-        "muyomu/http": "2.1.6",
         "muyomu/database": "2.0.2",
-        "muyomu/dynamic": "2.2.26",
-        "muyomu/log4p": "1.1.5",
-        "muyomu/filter": "1.0.17",
-        "muyomu/middleware": "1.0.6",
-        "muyomu/security": "1.1.25",
-        "muyomu/config": "1.1.5",
-        "muyomu/punit": "1.0.3",
-        "muyomu/executor": "2.2.1"
+        "muyomu/log4p": "1.1.6",
+        "muyomu/filter": "1.1.1",
+        "muyomu/config": "1.1.6",
+        "muyomu/punit": "1.0.4",
+        "muyomu/executor": "2.2.17",
+        "muyomu/router": "2.0.9",
+        "muyomu/http": "2.1.17",
+        "muyomu/inject": "1.0.5",
+        "muyomu/data": "1.0.1"
     }
 }

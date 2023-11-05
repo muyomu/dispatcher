@@ -17,13 +17,8 @@ class Request implements RequestClient,GetClient,PostClient,HeaderClient
 
     public function __construct()
     {
-        /*
-         * 内部数据库
-         */
         $this->dbClient = new DbClient();
-        /*
-         * 通用数据
-         */
+
         $this->attribute = new Attribute();
     }
 
@@ -31,14 +26,23 @@ class Request implements RequestClient,GetClient,PostClient,HeaderClient
      * http method ==========================================
      */
 
+    /**
+     * @return string
+     */
     public function getRequestMethod():string{
         return $_SERVER['REQUEST_METHOD'];
     }
 
+    /**
+     * @return string
+     */
     public function getRemoteHost():string{
         return $_SERVER['REMOTE_HOST'];
     }
 
+    /**
+     * @return string
+     */
     public function getURL(): string
     {
         $data = explode("?",$_SERVER['REQUEST_URI']);
@@ -49,6 +53,10 @@ class Request implements RequestClient,GetClient,PostClient,HeaderClient
      * parameter---------------------------------------------------------
      */
 
+    /**
+     * @param string $varName
+     * @return mixed
+     */
     public function getPara(string $varName): mixed
     {
         if (filter_has_var(INPUT_GET,$varName)){
@@ -58,6 +66,10 @@ class Request implements RequestClient,GetClient,PostClient,HeaderClient
         }
     }
 
+    /**
+     * @param string $varName
+     * @return mixed
+     */
     public function postPara(string $varName): mixed
     {
         if (filter_has_var(INPUT_GET,$varName)){
@@ -67,6 +79,10 @@ class Request implements RequestClient,GetClient,PostClient,HeaderClient
         }
     }
 
+    /**
+     * @param string $key
+     * @return string|null
+     */
     public function getHeader(string $key):string |null{
         $headers = apache_request_headers();
         return $headers[$key] ?? null;
@@ -76,11 +92,20 @@ class Request implements RequestClient,GetClient,PostClient,HeaderClient
      * model------------------------------------------------------------
      */
 
+    /**
+     * @param string $key
+     * @param mixed $value
+     * @return bool
+     */
     public function setAttribute(string $key, mixed $value): bool
     {
         return $this->attribute->setAttribute($key,$value);
     }
 
+    /**
+     * @param string $key
+     * @return mixed
+     */
     public function getAttribute(string $key): mixed
     {
         return $this->attribute->getAttribute($key);
@@ -98,5 +123,4 @@ class Request implements RequestClient,GetClient,PostClient,HeaderClient
     {
         return $this->dbClient;
     }
-
 }

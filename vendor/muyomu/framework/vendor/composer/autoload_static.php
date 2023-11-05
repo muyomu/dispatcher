@@ -11,17 +11,15 @@ class ComposerStaticInit285847b743627f36d86dd5241b8b5228
         array (
             'muyomu\\router\\' => 14,
             'muyomu\\punit\\' => 13,
-            'muyomu\\middleware\\' => 18,
             'muyomu\\log4p\\' => 13,
             'muyomu\\inject\\' => 14,
             'muyomu\\http\\' => 12,
             'muyomu\\framework\\' => 17,
             'muyomu\\filter\\' => 14,
             'muyomu\\executor\\' => 16,
-            'muyomu\\dpara\\' => 13,
             'muyomu\\database\\' => 16,
+            'muyomu\\data\\' => 12,
             'muyomu\\config\\' => 14,
-            'muyomu\\auth\\' => 12,
             'muyomu\\aop\\' => 11,
         ),
     );
@@ -34,10 +32,6 @@ class ComposerStaticInit285847b743627f36d86dd5241b8b5228
         'muyomu\\punit\\' => 
         array (
             0 => __DIR__ . '/..' . '/muyomu/punit/src',
-        ),
-        'muyomu\\middleware\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/muyomu/middleware/src',
         ),
         'muyomu\\log4p\\' => 
         array (
@@ -63,21 +57,17 @@ class ComposerStaticInit285847b743627f36d86dd5241b8b5228
         array (
             0 => __DIR__ . '/..' . '/muyomu/executor/src',
         ),
-        'muyomu\\dpara\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/muyomu/dynamic/src',
-        ),
         'muyomu\\database\\' => 
         array (
             0 => __DIR__ . '/..' . '/muyomu/database/src',
         ),
+        'muyomu\\data\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/muyomu/data/src',
+        ),
         'muyomu\\config\\' => 
         array (
             0 => __DIR__ . '/..' . '/muyomu/config/src',
-        ),
-        'muyomu\\auth\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/muyomu/security/src',
         ),
         'muyomu\\aop\\' => 
         array (

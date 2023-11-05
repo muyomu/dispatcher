@@ -5,9 +5,13 @@ namespace muyomu\executor;
 use muyomu\executor\client\ExecutorClient;
 use muyomu\executor\config\DefaultExecutorConfig;
 use muyomu\executor\exception\ServerException;
+use muyomu\executor\utility\ParaResolve;
+use muyomu\executor\utility\Utility;
+use muyomu\http\client\FormatClient;
 use muyomu\http\Request;
 use muyomu\http\Response;
 use muyomu\inject\Proxy;
+use muyomu\log4p\Log4p;
 use ReflectionException;
 
 class WebExecutor implements ExecutorClient
@@ -18,14 +22,31 @@ class WebExecutor implements ExecutorClient
 
     private Proxy $proxy;
 
+    private ParaResolve $paraResolve;
+
+    private Log4p $log4p;
+
     public function __construct(){
+
         $this->utility = new Utility();
+
         $this->executorDefaultConfig = new DefaultExecutorConfig();
+
         $this->proxy = new Proxy();
+
+        $this->paraResolve = new ParaResolve();
+
+        $this->log4p = new Log4p();
     }
 
     /**
-     * @throws ServerException|ReflectionException
+     * @param Request $request
+     * @param Response $response
+     * @param string $controllerClassName
+     * @param string $handle
+     * @return void
+     * @throws ReflectionException
+     * @throws ServerException
      */
     public function webExecutor(Request $request, Response $response, string $controllerClassName, string $handle): void
     {
@@ -57,18 +78,32 @@ class WebExecutor implements ExecutorClient
         $method = $this->utility->getControllerHandle($response,$class,$handle);
 
         /*
-         * prepare data
-         */
-        $rule = $request->getDbClient()->select("rule")->getData();
-
-        /*
          * 执行控制器处理器
          */
-        $returnData = $this->utility->handleExecutor($response,$instance,$method,$rule->getPathPara());
 
-        /*
-         * 处理返回数据
-         */
-        $response->doDataResponse($returnData,200);
+        try {
+            $returnData = $this->utility->handleExecutor($response, $instance, $method, $this->paraResolve->resolvePara($method));
+
+            if ($returnData instanceof FormatClient){
+
+                header("Content-Type:text/json;charset=utf-8");
+
+                die(json_encode($returnData->format(),JSON_UNESCAPED_UNICODE));
+            }else{
+                if (gettype($returnData) == "object"){
+
+                    die(serialize($returnData));
+                }elseif (gettype($returnData) == "array"){
+                    die(json_encode($returnData,JSON_UNESCAPED_UNICODE));
+                }
+                else{
+                    die($returnData);
+                }
+            }
+
+        } catch (exception\ParaMissException|ServerException|exception\UnKnownPara $e) {
+            $this->log4p->muix_log_error(__CLASS__,__METHOD__,__LINE__,$e->getMessage());
+            throw new ServerException();
+        }
     }
 }

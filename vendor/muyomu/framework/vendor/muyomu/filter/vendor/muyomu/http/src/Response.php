@@ -3,108 +3,418 @@
 namespace muyomu\http;
 
 use Exception;
+use muyomu\http\client\HttpClient;
 use muyomu\http\client\ResponseClient;
-use muyomu\http\config\DefaultFileConfig;
 use muyomu\http\config\DefaultHttpConfig;
 use muyomu\http\exception\FileNotFoundException;
-use muyomu\http\message\Message;
-use muyomu\http\message\MessageToArray;
+use muyomu\http\format\ExceptionFormat;
+use muyomu\http\utility\HeaderUtility;
 
-class Response implements ResponseClient
+class Response implements ResponseClient, HttpClient
 {
-    private DefaultFileConfig $defaultFileConfig;
 
     private DefaultHttpConfig $defaultHttpConfig;
 
+    private HeaderUtility $headerUtility;
+
     public function __construct()
     {
-        $this->defaultFileConfig = new DefaultFileConfig();
         $this->defaultHttpConfig = new DefaultHttpConfig();
+
+        $this->headerUtility = new HeaderUtility();
     }
 
+    //response
 
+    /**
+     * @param string $fileName
+     * @param bool $display
+     * @return void
+     * @throws FileNotFoundException
+     */
+    public function doPlainResponse(string $fileName, bool $display = true): void
+    {
+        //设置响应码
+        http_response_code(200);
+
+        //设置通用响应头
+        $this->headerUtility->addAllHeaders($this->defaultHttpConfig->getOptions("headers"));
+
+        //设置专用响应头
+        if ($display){
+
+            $position  = "inline";
+            $this->setHeader("Content-Disposition",$position);
+
+        }else{
+            $position  = "attachment";
+            $this->setHeader("Content-Disposition",$position.";filename=".pathinfo($fileName,PATHINFO_BASENAME));
+        }
+
+        $this->setHeader("Content-Type","text/plain;charset=utf-8");
+
+        //获取文件位置
+        $file_location = $GLOBALS["super_config"]["resDir"].$fileName;
+
+        //打开文件
+        $resource = fopen($file_location,"r");
+
+        if ($resource){
+
+            //获取文件内容
+            $content = fread($resource,filesize($file_location));
+
+            //输出文件内容
+            die($content);
+        }else{
+
+            throw new FileNotFoundException();
+        }
+    }
+
+    /**
+     * @param string $fileName
+     * @param bool $display
+     * @return void
+     * @throws FileNotFoundException
+     */
+    public function doJsonResponse(string $fileName, bool $display = true): void
+    {
+        //设置响应码
+        http_response_code(200);
+
+        //设置通用响应头
+        $this->headerUtility->addAllHeaders($this->defaultHttpConfig->getOptions("headers"));
+
+        //设置专用响应头
+        if ($display){
+
+            $position  = "inline";
+            $this->setHeader("Content-Disposition",$position);
+
+        }else{
+            $position  = "attachment";
+            $this->setHeader("Content-Disposition",$position.";filename=".pathinfo($fileName,PATHINFO_BASENAME));
+        }
+
+        $this->setHeader("Content-Type","text/json;charset=utf-8");
+
+        //获取文件位置
+        $file_location = $GLOBALS["super_config"]["resDir"].$fileName;
+
+        //打开文件
+        $resource = fopen($file_location,"r");
+
+        if ($resource){
+
+            //获取文件内容
+            $content = fread($resource,filesize($file_location));
+
+            //输出文件内容
+            die($content);
+        }else{
+
+            throw new FileNotFoundException();
+        }
+    }
+
+    /**
+     * @param string $fileName
+     * @param bool $display
+     * @return void
+     * @throws FileNotFoundException
+     */
+    public function doXmlResponse(string $fileName, bool $display = true): void
+    {
+        //设置响应码
+        http_response_code(200);
+
+        //设置通用响应头
+        $this->headerUtility->addAllHeaders($this->defaultHttpConfig->getOptions("headers"));
+
+        //设置专用响应头
+        if ($display){
+
+            $position  = "inline";
+            $this->setHeader("Content-Disposition",$position);
+
+        }else{
+            $position  = "attachment";
+            $this->setHeader("Content-Disposition",$position.";filename=".pathinfo($fileName,PATHINFO_BASENAME));
+        }
+
+        $this->setHeader("Content-Type","text/xml;charset=utf-8");
+
+        //获取文件位置
+        $file_location = $GLOBALS["super_config"]["resDir"].$fileName;
+
+        //打开文件
+        $resource = fopen($file_location,"r");
+
+        if ($resource){
+
+            //获取文件内容
+            $content = fread($resource,filesize($file_location));
+
+            //输出文件内容
+            die($content);
+        }else{
+
+            throw new FileNotFoundException();
+        }
+    }
+
+    /**
+     * @param string $fileName
+     * @param bool $display
+     * @return void
+     * @throws FileNotFoundException
+     */
+    public function doImageResponse(string $fileName, bool $display = true): void
+    {
+        //设置响应码
+        http_response_code(200);
+
+        //设置通用响应头
+        $this->headerUtility->addAllHeaders($this->defaultHttpConfig->getOptions("headers"));
+
+        //设置专用响应头
+        if ($display){
+
+            $position  = "inline";
+            $this->setHeader("Content-Disposition",$position);
+
+        }else{
+            $position  = "attachment";
+            $this->setHeader("Content-Disposition",$position.";filename=".pathinfo($fileName,PATHINFO_BASENAME));
+        }
+
+        $this->setHeader("Content-Type","image/".pathinfo($fileName,PATHINFO_EXTENSION).";charset=utf-8");
+
+        //获取文件位置
+        $file_location = $GLOBALS["super_config"]["resDir"].$fileName;
+
+        //打开文件
+        $resource = fopen($file_location,"r");
+
+        if ($resource){
+
+            //获取文件内容
+            $content = fread($resource,filesize($file_location));
+
+            //输出文件内容
+            die($content);
+        }else{
+
+            throw new FileNotFoundException();
+        }
+    }
+
+    /**
+     * @param string $fileName
+     * @param bool $display
+     * @return void
+     * @throws FileNotFoundException
+     */
+    public function doVideoResponse(string $fileName, bool $display = true): void
+    {
+        //设置响应码
+        http_response_code(200);
+
+        //设置通用响应头
+        $this->headerUtility->addAllHeaders($this->defaultHttpConfig->getOptions("headers"));
+
+        //设置专用响应头
+        if ($display){
+
+            $position  = "inline";
+            $this->setHeader("Content-Disposition",$position);
+
+        }else{
+            $position  = "attachment";
+            $this->setHeader("Content-Disposition",$position.";filename=".pathinfo($fileName,PATHINFO_BASENAME));
+        }
+
+        $this->setHeader("Content-Type","video/".pathinfo($fileName,PATHINFO_EXTENSION).";charset=utf-8");
+
+        //获取文件位置
+        $file_location = $GLOBALS["super_config"]["resDir"].$fileName;
+
+        //打开文件
+        $resource = fopen($file_location,"r");
+
+        if ($resource){
+
+            //获取文件内容
+            $content = fread($resource,filesize($file_location));
+
+            //输出文件内容
+            die($content);
+        }else{
+
+            throw new FileNotFoundException();
+        }
+    }
+
+    /**
+     * @param string $fileName
+     * @param bool $display
+     * @return void
+     * @throws FileNotFoundException
+     */
+    public function doAudioResponse(string $fileName, bool $display = true): void
+    {
+        //设置响应码
+        http_response_code(200);
+
+        //设置通用响应头
+        $this->headerUtility->addAllHeaders($this->defaultHttpConfig->getOptions("headers"));
+
+        //设置专用响应头
+        if ($display){
+
+            $position  = "inline";
+            $this->setHeader("Content-Disposition",$position);
+
+        }else{
+            $position  = "attachment";
+            $this->setHeader("Content-Disposition",$position.";filename=".pathinfo($fileName,PATHINFO_BASENAME));
+        }
+
+        $this->setHeader("Content-Type","audio/".pathinfo($fileName,PATHINFO_EXTENSION).";charset=utf-8");
+
+        //获取文件位置
+        $file_location = $GLOBALS["super_config"]["resDir"].$fileName;
+
+        //打开文件
+        $resource = fopen($file_location,"r");
+
+        if ($resource){
+
+            //获取文件内容
+            $content = fread($resource,filesize($file_location));
+
+            //输出文件内容
+            die($content);
+        }else{
+
+            throw new FileNotFoundException();
+        }
+    }
+
+    /**
+     * @param string $fileName
+     * @return void
+     * @throws FileNotFoundException
+     */
+    public function doResourceResponse(string $fileName):void{
+        //设置响应码
+        http_response_code(200);
+
+        //设置通用响应头
+        $this->headerUtility->addAllHeaders($this->defaultHttpConfig->getOptions("headers"));
+
+        $this->setHeader("Content-Disposition","attachment;filename=".pathinfo($fileName,PATHINFO_BASENAME));
+
+        $this->setHeader("Content-Type","image/".pathinfo($fileName,PATHINFO_EXTENSION).";charset=utf-8");
+
+        //获取文件位置
+        $file_location = $GLOBALS["super_config"]["resDir"].$fileName;
+
+        //打开文件
+        $resource = fopen($file_location,"r");
+
+        if ($resource){
+
+            //获取文件内容
+            $content = fread($resource,filesize($file_location));
+
+            //输出文件内容
+            die($content);
+        }else{
+
+            throw new FileNotFoundException();
+        }
+    }
+
+    //http
+    /**
+     * @param string $url
+     * @return void
+     */
+    public function reDirect(string $url):void{
+        $this->setHeader("Location",$url);
+        die();
+    }
+
+    /**
+     * @param string $field
+     * @param string $content
+     * @return void
+     */
     public function setHeader(string $field, string $content): void
     {
         $header = "$field: $content";
         header($header);
     }
 
-    private function addAllHeaders(array $config):void{
-        $keys = array_keys($config);
-        foreach ($keys as $key){
-            $value = $config[$key];
-            $header = "$key: $value";
-            header("$header");
-        }
-    }
-
-    public function doDataResponse(mixed $data,int $code): void
+    /**
+     * @param Exception $exception
+     * @param int $code
+     * @return void
+     */
+    public function doExceptionResponse(Exception $exception, int $code): void
     {
+        //设置状态码
         http_response_code($code);
-        $this->addAllHeaders($this->defaultHttpConfig->getOptions("headers"));
 
-        $message = new Message();
-        $message->setDataStatus("Success");
-        $message->setDataType(gettype($data));
-        $message->setData($data);
+        //设置通用响应头
+        $this->headerUtility->addAllHeaders($this->defaultHttpConfig->getOptions("headers"));
 
-        $data = MessageToArray::messageToArray($message);
+        //设置专用响应头
+        $this->setHeader("Content-Type","text/json:charset=utf-8");
 
-        die(json_encode($data));
+        //数据格式
+        $format = new ExceptionFormat("Exception","String",$exception->getMessage());
+
+        //返回数据
+        die(json_encode($format->format(),JSON_UNESCAPED_UNICODE));
     }
 
-    public function doExceptionResponse(Exception $exception, int $code,): void
-    {
-        http_response_code($code);
-        $this->addAllHeaders($this->defaultHttpConfig->getOptions("headers"));
+    //view
 
-        $message = new Message();
-        $message->setDataStatus("Failure");
-        $message->setDataType(gettype("string"));
-        $message->setData($exception->getMessage());
+    /**
+     * @param string $fileName
+     * @return void
+     * @throws FileNotFoundException
+     */
+    public function doViewResponse(string $fileName):void{
+        //设置响应码
+        http_response_code(200);
 
-        $data = MessageToArray::messageToArray($message);
+        //设置通用响应头
+        $this->headerUtility->addAllHeaders($this->defaultHttpConfig->getOptions("headers"));
 
-        die(json_encode($data));
-    }
+        $this->setHeader("Content-Disposition","inline;filename=".pathinfo($fileName,PATHINFO_BASENAME));
 
-    public function doFileResponse(string $file): void
-    {
-        $file_location = $this->defaultFileConfig->getOptions("location").$file;
+        $this->setHeader("Content-Type","text/".pathinfo($fileName,PATHINFO_EXTENSION).";charset=utf-8");
+
+        //获取文件位置
+        $file_location = $GLOBALS["super_config"]["resDir"].$fileName;
+
+        //打开文件
         $resource = fopen($file_location,"r");
+
         if ($resource){
-            $this->addAllHeaders($this->defaultFileConfig->getOptions("headers"));
-            Header ( "Accept-Length: " . filesize ($file_location) );
-            Header ( "Content-Disposition: attachment; filename=" . $file );
+
+            //获取文件内容
             $content = fread($resource,filesize($file_location));
+
+            //输出文件内容
             die($content);
         }else{
-            $this->doExceptionResponse(new FileNotFoundException(),404);
-        }
-    }
 
-
-    public function doCustomizeResponse(mixed $data, int $code, array $headerConfig = array()):void
-    {
-        http_response_code($code);
-        $this->customizeHeaders($headerConfig);
-
-        $message = new Message();
-        $message->setDataStatus("Success");
-        $message->setDataType(gettype("string"));
-        $message->setData($data);
-
-        $data = MessageToArray::messageToArray($message);
-
-        die(json_encode($data));
-    }
-
-    private function customizeHeaders(array $config):void{
-        $keys = array_keys($config);
-        foreach ($keys as $key){
-            $value = $config[$key];
-            $header = "$key: $value";
-            header("$header");
+            throw new FileNotFoundException();
         }
     }
 }

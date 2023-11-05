@@ -14,7 +14,6 @@ class MyTest extends GenericTest
     #[AutoWired(TestUtility::class)]
     private TestUtility $testUtility;
 
-
     /**
      * @throws ReflectionException
      * @throws AopException
